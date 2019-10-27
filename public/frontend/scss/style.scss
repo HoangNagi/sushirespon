@@ -1,0 +1,214 @@
+@import "color";
+@import "reponsive";
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    .navbar
+    {   
+        background: var(--mainBlack) !important;
+        padding: 1rem 3rem;
+        .logo
+        {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .menu
+        {
+            .menu-item_list
+            {
+                .menu-item
+                {
+                    .dropdown-menu
+                    {
+                        position: absolute;
+                        top: 63px !important;
+                        .dropdown-item
+                        {
+                            color: var(--mainBlack) !important;
+                        }
+                    }
+                    a
+                    {
+                        font-size: 1.4rem;
+                        color: var(--mainWhite) !important;
+                        &:hover
+                        {
+                            color: var(--mainGreen) !important;
+                        }
+                    }
+                }                        
+            }
+        }
+    }/*end header*/
+
+    .carousel
+    {
+        z-index: 0;
+        background: url('/../sushiweb/public/frontend/img/bg5.jpg');
+        width: 100%;
+        max-height: 100%;
+        .carousel-indicators
+        {
+            li
+            {
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                margin: 1rem;
+            }
+        }
+
+        .carousel-inner
+        {
+            padding: 0 8rem;
+            img
+            {
+                position: relative;
+                z-index: -1;
+                background: center center;
+                max-width: 65% !important;
+                display: block;
+                vertical-align: middle;
+                border-style: none;
+            }
+            .text
+            {
+                position: absolute;
+                top: 30%;
+                left: 0;
+                right: 0;
+                padding: 0 3em 0 45px;
+                width: 600px;
+                height: 300px;
+                color: var(--mainWhite);
+                .subheading
+                {
+                    background: var(--mainBlack);
+                    color: var(--mainWhite);
+                    font-size: 15px;
+                    padding:0.4rem 0.5rem;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                }
+                .horizontal
+                {
+                    h1
+                    {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin-bottom: 2rem !important;
+                    }
+                    p
+                    {
+                    font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    /* End Carousel */
+
+    .product
+    {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 0 !important;
+        h1
+        {
+            text-transform: uppercase;
+        }
+        .product-content
+        {
+            padding: 1rem 0;
+            h1
+            {
+                text-transform: uppercase;
+            }
+            .list-product
+            {
+                margin: 1rem 0;
+               .list-product_item
+                {
+                    margin: 0 auto !important;
+                }    
+            }
+        }
+
+        .info-product
+        {
+            .tab-list
+            {
+                width: 100%;
+                .tab
+                {
+                    overflow: hidden;
+                    .tablinks
+                    {
+                        display: inline-block;
+                        background-color: inherit;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 14px 14px;
+                        transition: 0.3s;
+
+                    }
+                    >.active 
+                    {
+                        background-color: var(--mainGreen);
+                        color: var(--mainWhite);
+                    } 
+                }
+            }
+            .tab-list_show
+            {
+                position: relative;
+                top: 0;
+                right: 0;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                .tabcontent 
+                {
+                    display: none;
+                    padding: 6px 12px;
+                    border-top: none;
+                }
+            }
+        }
+    }
+
+    .footer
+    {
+        background: var(--mainBlack) !important;
+        padding: 3rem 0;
+        .info-shop_footer, .contact-shop_footer, .link-shop_footer
+        {
+            color: var(--mainWhite) !important;
+            margin-top: 1rem;
+            h3
+            {
+                font-size: 2rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            p
+            {
+                margin-top: 1rem;
+                line-height: 2rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .link-shop_footer
+        {
+            max-width: 100%;
+        }
+    }
+    /* End Footer */
+}

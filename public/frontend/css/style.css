@@ -1,0 +1,154 @@
+:root {
+  --mainBlack: #212121;
+  --mainGreen: #44bd32;
+  --mainWhite: #fff; }
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    max-height: auto !important; }
+    .carousel .carousel-inner {
+      padding: 0 !important;
+      height: 100vh !important; }
+      .carousel .carousel-inner img {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding: 5% 0; }
+      .carousel .carousel-inner .text {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 20% 2rem !important; }
+        .carousel .carousel-inner .text .horizontal h1 {
+          font-size: 1.6rem; }
+        .carousel .carousel-inner .text .horizontal .horizontal-review {
+          padding: 0 !important;
+          float: left;
+          font-size: 1.4rem !important;
+          color: var(--mainWhite); } }
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*end header*/
+  /* End Carousel */
+  /* End Footer */ }
+  body .navbar {
+    background: var(--mainBlack) !important;
+    padding: 1rem 3rem; }
+    body .navbar .logo {
+      font-size: 2rem;
+      font-weight: bold; }
+    body .navbar .menu .menu-item_list .menu-item .dropdown-menu {
+      position: absolute;
+      top: 63px !important; }
+      body .navbar .menu .menu-item_list .menu-item .dropdown-menu .dropdown-item {
+        color: var(--mainBlack) !important; }
+    body .navbar .menu .menu-item_list .menu-item a {
+      font-size: 1.4rem;
+      color: var(--mainWhite) !important; }
+      body .navbar .menu .menu-item_list .menu-item a:hover {
+        color: var(--mainGreen) !important; }
+  body .carousel {
+    z-index: 0;
+    background: url("/../sushiweb/public/frontend/img/bg5.jpg");
+    width: 100%;
+    max-height: 100%; }
+    body .carousel .carousel-indicators li {
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      margin: 1rem; }
+    body .carousel .carousel-inner {
+      padding: 0 8rem; }
+      body .carousel .carousel-inner img {
+        position: relative;
+        z-index: -1;
+        background: center center;
+        max-width: 65% !important;
+        display: block;
+        vertical-align: middle;
+        border-style: none; }
+      body .carousel .carousel-inner .text {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        padding: 0 3em 0 45px;
+        width: 600px;
+        height: 300px;
+        color: var(--mainWhite); }
+        body .carousel .carousel-inner .text .subheading {
+          background: var(--mainBlack);
+          color: var(--mainWhite);
+          font-size: 15px;
+          padding: 0.4rem 0.5rem;
+          letter-spacing: 3px;
+          text-transform: uppercase; }
+        body .carousel .carousel-inner .text .horizontal h1 {
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 2rem !important; }
+        body .carousel .carousel-inner .text .horizontal p {
+          font-size: 1.3rem; }
+  body .product {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0 !important; }
+    body .product h1 {
+      text-transform: uppercase; }
+    body .product .product-content {
+      padding: 1rem 0; }
+      body .product .product-content h1 {
+        text-transform: uppercase; }
+      body .product .product-content .list-product {
+        margin: 1rem 0; }
+        body .product .product-content .list-product .list-product_item {
+          margin: 0 auto !important; }
+    body .product .info-product .tab-list {
+      width: 100%; }
+      body .product .info-product .tab-list .tab {
+        overflow: hidden; }
+        body .product .info-product .tab-list .tab .tablinks {
+          display: inline-block;
+          background-color: inherit;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 14px;
+          transition: 0.3s; }
+        body .product .info-product .tab-list .tab > .active {
+          background-color: var(--mainGreen);
+          color: var(--mainWhite); }
+    body .product .info-product .tab-list_show {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px; }
+      body .product .info-product .tab-list_show .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border-top: none; }
+  body .footer {
+    background: var(--mainBlack) !important;
+    padding: 3rem 0; }
+    body .footer .info-shop_footer, body .footer .contact-shop_footer, body .footer .link-shop_footer {
+      color: var(--mainWhite) !important;
+      margin-top: 1rem; }
+      body .footer .info-shop_footer h3, body .footer .contact-shop_footer h3, body .footer .link-shop_footer h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+      body .footer .info-shop_footer p, body .footer .contact-shop_footer p, body .footer .link-shop_footer p {
+        margin-top: 1rem;
+        line-height: 2rem;
+        font-size: 1.2rem; }
+    body .footer .link-shop_footer {
+      max-width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
