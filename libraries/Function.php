@@ -17,7 +17,7 @@
     // Tạo đường dẫn cho dễ sửa trên các máy khác
     function duongdan()
     {
-        return $url = "http://localhost:8081/sushiweb/";
+        return $url = "http://localhost:8888/sushiweb/";
     }
 
     // Trả về địa chỉ có tham số $url

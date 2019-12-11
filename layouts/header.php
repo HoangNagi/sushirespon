@@ -28,7 +28,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <?php foreach($danhmucsanpham as $item) : ?>
-                                <a class="dropdown-item" href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>"><?php echo $item['tendm'] ?></a>
+                                <a class="dropdown-item" href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>"><?php echo $item['tendanhmuc'] ?></a>
                             <?php endforeach; ?> 
                         </div>
                     </li>

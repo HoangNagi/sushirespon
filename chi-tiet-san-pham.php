@@ -17,18 +17,18 @@
                 <h1 class="text-center pt-4 pb-4">chi tiết sản phẩm</h1>
                 <div class="row">
                     <div class="col-md-12 col-lg-6 image-product">
-                        <img class="card-img-top" src="<?php echo duongdan() ?>/public/uploads/sanpham/<?php echo $sanpham['anhsanpham'] ?>" width="200px" height="600px" alt="Card image cap">
+                    <img class="card-img-top"
+                                src="../sushiweb/public/frontend/img/<?php echo $sanpham['anhsanpham'] ?>" width="100%"
+                                height="100%" alt="Card image cap">
                     </div>        
                     <div class="col-md-12 col-lg-6 info-product pt-2">    
                         <h2><?php echo $sanpham['tensanpham'] ?></h2>
-                        <h4><?php echo $sanpham['sanphamduongdan'] ?></h4>
                         <div class="row mt-4">
                             <div class="col-12 tab-list">
                                 <div class="tab">
                                     <button class="tablinks" onclick="openCity(event, 'mota')">Mô tả</button>
-                                    <button class="tablinks" onclick="openCity(event, 'chieucao')">Chiều cao</button>
-                                    <button class="tablinks" onclick="openCity(event, 'phanbo')">Phân bố</button>
-                                    <button class="tablinks" onclick="openCity(event, 'chamsoc')">Chăm sóc</button>
+                                    <button class="tablinks" onclick="openCity(event, 'nguyenlieu')">Nguyên liệu</button>
+                                    <button class="tablinks" onclick="openCity(event, 'congthuc')">Công thức</button>
                                 </div>
                             </div>
                             <div class="col-12 tab-list_show">
@@ -36,16 +36,12 @@
                                     <p><?php echo $sanpham['mota'] ?></p>
                                 </div>
 
-                                <div id="chieucao" class="tabcontent">
-                                    <p><?php echo $sanpham['chieucao'] ?></p>
+                                <div id="nguyenlieu" class="tabcontent">
+                                    <p><?php echo $sanpham['nguyenlieu'] ?></p>
                                 </div>
 
-                                <div id="phanbo" class="tabcontent">
-                                    <p><?php echo $sanpham['phanbo'] ?></p>
-                                </div>
-
-                                <div id="chamsoc" class="tabcontent">
-                                    <p><?php echo $sanpham['chamsoc'] ?></p>
+                                <div id="congthuc" class="tabcontent">
+                                    <p><?php echo $sanpham['congthuc'] ?></p>
                                 </div>
                             </div>
                         </div>

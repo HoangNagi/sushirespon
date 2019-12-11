@@ -1,7 +1,7 @@
 <?php 
     require_once __DIR__. "/autoload/autoload.php"; 
     
-    $sqlHomeCate = "SELECT tendm, id FROM danhmucsp WHERE trangthai = 1 ORDER BY tendm";
+    $sqlHomeCate = "SELECT tendanhmuc, id FROM danhmucsp WHERE trangthai = 1 ORDER BY tendanhmuc";
     $TrangthaiDanhMuc = $db -> fetchsql($sqlHomeCate);
 
     $data = [];
@@ -9,9 +9,9 @@
     foreach ($TrangthaiDanhMuc as $item)
     {
         $IDdanhmuc = intval($item['id']);
-        $sql = "SELECT * FROM sanpham WHERE id_dm = $IDdanhmuc";
+        $sql = "SELECT * FROM sanpham WHERE danhmuc_id = $IDdanhmuc";
         $TrangThaiSP = $db -> fetchsql($sql);
-        $data[$item['tendm']] = $TrangThaiSP;
+        $data[$item['tendanhmuc']] = $TrangThaiSP;
     }
 ?>
 
@@ -26,7 +26,7 @@
             </ol>
             <div class="carousel-inner" style="height: 600px">
                 <div class="carousel-item active">
-                    <img class="d-block carousel-img float-right" src="../sushiweb/public/frontend/img/bg1.png" alt="">
+                    <img class="d-block carousel-img float-right" src="../sushiweb/public/frontend/img/bg1.png" alt=">
                     <div class="d-flex align-items-center ftco-animate">
                         <div class="text">
                             <span class="subheading">#Nigiri sushi</span>
@@ -81,10 +81,10 @@
                                 <div class="col-md-12 col-lg-4 list-product text-center">
                                     <div class="card list-product_item" style="width: 18rem;">
                                         <a href="chi-tiet-san-pham.php?id=<?php echo $item['id'] ?>">
-                                            <img class="card-img-top" src="<?php echo duongdan() ?>/public/uploads/sanpham/<?php echo $item['anhsp'] ?>" width="100%" height="400px" alt="Card image cap">
+                                            <img class="card-img-top" src="../sushiweb/public/frontend/img/<?php echo $item['anhsanpham'] ?>" width="100%" height="100%" alt="Card image cap">
                                         </a>
                                         <div class="card-body">
-                                            <h5 class="card-title"><?php echo $item['tensp'] ?></h5>
+                                            <h5 class="card-title"><?php echo $item['tensanpham'] ?></h5>
                                             <p class="card-text"><?php echo $item['mota'] ?></p>
                                         </div>
                                     </div>
