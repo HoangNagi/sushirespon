@@ -26,7 +26,7 @@
                         <div class="row mt-4">
                             <div class="col-12 tab-list">
                                 <div class="tab">
-                                    <button class="tablinks" onclick="openCity(event, 'mota')">Mô tả</button>
+                                    <button id="first_tab" class="tablinks" onclick="openCity(event, 'mota')">Mô tả</button>
                                     <button class="tablinks" onclick="openCity(event, 'nguyenlieu')">Nguyên liệu</button>
                                     <button class="tablinks" onclick="openCity(event, 'congthuc')">Công thức</button>
                                 </div>
