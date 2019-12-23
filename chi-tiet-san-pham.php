@@ -35,7 +35,6 @@
                                 <div id="mota" class="tabcontent">
                                     <p><?php echo $sanpham['mota'] ?></p>
                                 </div>
-
                                 <div id="nguyenlieu" class="tabcontent">
                                     <p><?php echo $sanpham['nguyenlieu'] ?></p>
                                 </div>
