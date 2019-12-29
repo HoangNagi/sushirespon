@@ -70,7 +70,6 @@
             </div>
         </div>
         <!-- END CAROUSEL -->
-
         <div class="product">
             <div class="container">
                 <?php foreach($data as $key => $value) : ?>

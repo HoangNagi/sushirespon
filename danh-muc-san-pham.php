@@ -25,7 +25,6 @@
     $sotrang = $sanpham['page'];
 
     unset($sanpham['page']);
-
     //Lấy server name hiện tại
     // => /ShoppingTree/danh-muc-san-pham.php
     $path = $_SERVER['SCRIPT_NAME'];
