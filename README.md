@@ -28,7 +28,7 @@ Thông tin chi tiết của từng loại sushi<br>
 Thêm sửa xóa danh mục sản phẩm và sản phẩm<br>
 Nội dung của bài toán<br>
 Chức năng đã làm được: Trang admin, trang chủ website, trang danh mục sản phẩm, trang chi tiết sản phẩm, trang giới thiêu website.<br>
-Nếu muốn vô trang admin thì vô đường dẫn https://localhost[cổng]/sushiweb/admin/index.php Giao diện trang danh mục admin có thể thêm sửa xóa danh mục sản phẩm hoặc sản phẩm<br>
+Nếu muốn vô trang admin thì vô đường dẫn https://localhost[cổng]/[tên thư mục folder trong htdocs]/admin/index.php Giao diện trang danh mục admin có thể thêm sửa xóa danh mục sản phẩm hoặc sản phẩm<br>
 ![image](https://user-images.githubusercontent.com/36804847/71859820-ea6ecb00-3122-11ea-940a-698eb6796cf6.png)<br>
 ![image](https://user-images.githubusercontent.com/36804847/71859857-08d4c680-3123-11ea-9969-8b5e7c15c12f.png)<br>
 ![image](https://user-images.githubusercontent.com/36804847/71859902-2e61d000-3123-11ea-998e-04c92bb6767a.png)<br>
