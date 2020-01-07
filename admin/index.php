@@ -18,8 +18,6 @@
             </li>
             <li class="breadcrumb-item active">Quản trị</li>
         </ol>
-
-        <?php var_dump($danhmucsanpham); ?>
     </div>
     <!-- /.container-fluid -->
 </div>

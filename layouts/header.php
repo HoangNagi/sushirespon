@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavDropdown">
                 <ul class="nav menu-item_list">
                     <li class="nav-item menu-item">
-                        <a class="nav-link" href="#">Giới thiệu</a>
+                        <a class="nav-link" href="gioi-thieu.php">Giới thiệu</a>
                     </li>
                     <li class="nav-item dropdown menu-item">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,9 +31,6 @@
                                 <a class="dropdown-item" href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>"><?php echo $item['tendanhmuc'] ?></a>
                             <?php endforeach; ?> 
                         </div>
-                    </li>
-                    <li class="nav-item menu-item">
-                        <a class="nav-link" href="#">Hỗ trợ</a>
                     </li>
                 </ul>
             </div>

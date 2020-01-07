@@ -107,7 +107,7 @@
         <div class="clearfix"></div>
         <!-- Thông báo lỗi -->
         <?php require_once __DIR__. "/../../../partials/notification.php";?>
-         
+
 
         <form class="form" action="" method="POST" enctype="multipart/form-data">
             <div class="form-group">
@@ -116,60 +116,71 @@
                     <select class="form-control col-md-8" name="danhmuc_id">
                         <option value=""> - Hãy chọn danh mục sản phẩm - </option>
                         <?php foreach($danhmucsanpham as $item) : ?>
-                            <option value="<?php echo $item['id'] ?>" <?php echo $Editsanpham['danhmuc_id'] == $item['id'] ? "selected = 'selected'" : '' ?>> <?php echo $item['tendanhmuc'] ?></option>
+                        <option value="<?php echo $item['id'] ?>"
+                            <?php echo $Editsanpham['danhmuc_id'] == $item['id'] ? "selected = 'selected'" : '' ?>>
+                            <?php echo $item['tendanhmuc'] ?></option>
                         <?php endforeach ?>
                     </select>
                     <?php if(isset($error['danhmucsanpham'])): ?>
-                        <p class="text-danger ml-3"> <?php echo $error['danhmucsanpham'] ?></p>
+                    <p class="text-danger ml-3"> <?php echo $error['danhmucsanpham'] ?></p>
                     <?php endif ?>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col">
                     <label for="exampleInputEmail1">Tên sản phẩm</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nhập tên sản phẩm" name="tensanpham" value="<?php echo $Editsanpham['tensanpham'] ?>">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nhập tên sản phẩm"
+                        name="tensanpham" value="<?php echo $Editsanpham['tensanpham'] ?>">
                     <?php if(isset($error['tensanpham'])) : ?>
-                        <p class="text-danger ml-3"> <?php echo $error['tensanpham'] ?></p>
+                    <p class="text-danger ml-3"> <?php echo $error['tensanpham'] ?></p>
                     <?php endif ?>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col">
                     <label for="exampleInputEmail1">Mô tả </label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Môt tả" name="mota" value="<?php echo $Editsanpham['mota'] ?>">
+                    <textarea name="mota" class="form-control" id="exampleInputEmail1" cols="20"
+                        rows="5"><?php echo $Editsanpham['mota'] ?></textarea>
                     <?php if(isset($error['mota'])) : ?>
-                        <p class="text-danger ml-3"> <?php echo $error['mota'] ?></p>
+                    <p class="text-danger ml-3"> <?php echo $error['mota'] ?></p>
                     <?php endif ?>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col">
                     <label for="exampleInputEmail1">Nguyên liệu</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nguyên liệu" name="nguyenlieu" value="<?php echo $Editsanpham['nguyenlieu'] ?>">
+                    <textarea name="nguyenlieu" class="form-control" id="exampleInputEmail1" cols="20"
+                        rows="5"><?php echo $Editsanpham['nguyenlieu'] ?></textarea>
                     <?php if(isset($error['nguyenlieu'])) : ?>
-                        <p class="text-danger ml-3"> <?php echo $error['nguyenlieu'] ?></p>
+                    <p class="text-danger ml-3"> <?php echo $error['nguyenlieu'] ?></p>
                     <?php endif ?>
                 </div>
             </div>
             <div class="form-group d-flex">
-                <div class="col-sm-2 col-lg-2">
+                <div class="col-sm-9 col-lg-9">
                     <label for="exampleInputEmail1">Công thức</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Công thức" name="congthuc" value="<?php echo $Editsanpham['congthuc'] ?>">
+                    <textarea name="congthuc" class="form-control" id="exampleInputEmail1" cols="20"
+                        rows="5"><?php echo $Editsanpham['congthuc'] ?></textarea>
                     <?php if(isset($error['congthuc'])) : ?>
-                        <p class="text-danger ml-3"> <?php echo $error['congthuc'] ?></p>
+                    <p class="text-danger ml-3"> <?php echo $error['congthuc'] ?></p>
                     <?php endif ?>
                 </div>
-                 
-                <div class="col-sm-6 col-lg-5 ">
-                    <label for="exampleInputEmail1">Hình ảnh</label>
-                    <input type="file" class="form-control" id="exampleInputEmail1" placeholder="Chọn hình" name="anhsanpham">
-                    <?php if(isset($error['anhsanpham'])) : ?>
-                        <p class="text-danger ml-3"> <?php echo $error['anhsanpham'] ?></p>
-                    <?php endif ?>
-                </div>
-                <img src="<?php echo duongdan() ?>/public/uploads/sanpham/<?php echo $Editsanpham['anhsanpham'] ?>" width="300px" height="300px" style="border: 2px solid #171717;">
-            </div>
 
+                <div class="col-sm-3 col-lg-3 ">
+                    <div class="col-sm-12 col-lg-12">
+                    <label for="exampleInputEmail1">Hình ảnh</label>
+                        <input type="file" class="form-control" id="exampleInputEmail1" placeholder="Chọn hình"
+                            name="anhsanpham">
+                        <?php if(isset($error['anhsanpham'])) : ?>
+                        <p class="text-danger ml-3"> <?php echo $error['anhsanpham'] ?></p>
+                        <?php endif ?>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 ">
+                        <img src="<?php echo duongdan() ?>/public/uploads/sanpham/<?php echo $Editsanpham['anhsanpham'] ?>"
+                            width="300px" height="300px" style="border: 2px solid #171717;">
+                    </div>
+                </div>
+            </div>
             <button type="submit" class="btn btn-success ml-3 pl-2">Lưu</button>
         </form>
     </div>
@@ -178,6 +189,3 @@
 <!-- /.content-wrapper -->
 
 <?php require_once __DIR__. "/../../layouts/footer.php";  ?>
-
-
- 
